@@ -7,11 +7,13 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, UITextFieldDelegate {
 
     @IBOutlet var temperature : UILabel!
     @IBOutlet var city : UILabel!
     @IBOutlet var conition : UIImageView!
+    @IBOutlet var searchField : UITextField!
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -19,5 +21,9 @@ class ViewController: UIViewController {
     }
 
 
+    @IBAction func searchPressed(_ sender: UIButton) {
+    }
+    
+    
 }
 

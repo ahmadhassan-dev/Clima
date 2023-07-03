@@ -39,7 +39,7 @@
                                                 <rect key="frame" x="50" y="0.0" width="235" height="40"/>
                                                 <color key="backgroundColor" systemColor="systemFillColor"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
-                                                <textInputTraits key="textInputTraits"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="words" returnKeyType="go" textContentType="name"/>
                                             </textField>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Cr-pd-dUW">
                                                 <rect key="frame" x="295" y="0.99999999999999645" width="40" height="38.333333333333329"/>
@@ -49,6 +49,9 @@
                                                 </constraints>
                                                 <color key="tintColor" systemColor="labelColor"/>
                                                 <state key="normal" backgroundImage="magnifyingglass" catalog="system"/>
+                                                <connections>
+                                                    <action selector="searchPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="NCM-yU-kTA"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -113,6 +116,8 @@
                         <outlet property="conditionImageView" destination="mYn-vV-MBC" id="eaj-VZ-5LL"/>
                         <outlet property="conition" destination="mYn-vV-MBC" id="XRR-QC-mcL"/>
                         <outlet property="myLabel" destination="w9o-tW-03D" id="eCw-Sf-N5b"/>
+                        <outlet property="searchField" destination="2eh-wL-W34" id="Fj4-RW-XRq"/>
+                        <outlet property="searchTextField" destination="2eh-wL-W34" id="jfN-kD-ecy"/>
                         <outlet property="temperature" destination="w9o-tW-03D" id="hZ2-e0-C1o"/>
                         <outlet property="temperatureLabel" destination="w9o-tW-03D" id="xQB-C7-nQY"/>
                     </connections>
@@ -123,7 +128,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="background" width="1377" height="1377"/>
+        <image name="background" width="662" height="662"/>
         <image name="cloud.drizzle.fill" catalog="system" width="126" height="128"/>
         <image name="location.circle.fill" catalog="system" width="128" height="123"/>
         <image name="magnifyingglass" catalog="system" width="128" height="117"/>
